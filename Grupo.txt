@@ -1,0 +1,7 @@
+Integrantes:
+
+Anna Luiza Morais Roman RM: 85367
+Gustavo Daza Rodrigues 	RM: 85746
+Laura de Araujo Tamari 	RM: 84347
+
+Professor o front está na pasta node-postoeletrico, a API está em posto eletrico e tem também um PDF que mostra as telas do frontend. Caso tenha algum problema pode nos chamar.

@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    section{
+        height: 570px;
+        width: 450px;
+        background-color: #fff;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.10),
+            0px 10px 20px rgba(0,0,0,0.05),
+            0px 20px 20px rgba(0,0,0,0.05),
+            0px 30px 20px rgba(0,0,0,0.05);
+        border-bottom: 2px solid #00cccc;
+    }
+    section>h1{
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        margin: 40px 0 40px 0;
+    }
+    .form-group{
+        margin: 0 20px 0 20px;
+    }
+    .form-group>label{
+        display: block;
+        margin: 5px 0 10px 0;
+    }
+    .form-group>input,select{
+        height: 30px;
+        width: 400px;
+        margin: 0 0 15px 0;
+        border: none;
+        border-bottom: 2px solid #ABABAB;
+    }
+    .button-group{
+        width: 100%;
+        position: absolute;
+        margin-top: 30px;
+    }
+    .button-group>button{
+        background: #00cccc;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 35px;
+        width: 250px;
+        color: #fff;
+        border-radius: 20px;
+        border: none;
+    }
+    .form-button{
+        margin: 0 20px 0 20px;
+    }
+    
+</style>
+</head>
+
+<body>
+<section>
+    <h1>Cadastre o ambiente</h1>
+    <form action="/cadastrar-carro" method="post" id="form">
+        <div class="form-group">
+            <label>Marca</label>
+            <input type="text" placeholder="Marca" name="marca" id="marca" required>
+        </div>
+        <div class="form-group">
+            <label>Modelo</label>
+            <input type="text" placeholder="Modelo" name="modelo" id="modelo" required>
+        </div>
+        <div class="form-group">
+            <label>Placa</label>
+            <input type="text" placeholder="Placa" name="placa" id="placa" required>
+        </div>
+        <div class="form-group">
+            <label>Quilometragem</label>
+            <input type="number" placeholder="Quilometragem" name="quilometragem" id="quilometragem" required>
+        </div>
+        <div class="form-group">
+            <label>Ambiente</label>
+            <select name="ambiente">
+                <option>Selecione Ambiente</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+            </select>
+        </div>
+        <div class="button-group">
+            <button type="submit" onclick="enviar()">Cadastrar</button>
+        </div>
+    </form>
+</section>
+<script>
+    function enviar(){
+        alert("Ambiente cadastrado com sucesso!")
+    }
+</script>
+</body>
+</html>
